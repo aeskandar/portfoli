@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.9em;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: #001f3f;
+  color: white;
+}
+
+hr {
+  width: 50%;
+}
+
+img {
+  width: 270px;
+  border-radius: 350px;
+}
+
+
+footer {
+  background-color: #FFE4B5;
+  height: 100px;
+}
+
+/*                            DIV and box model           */
+
+div.header {
+  background-color: #5CACEE;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  text-align: right;
+}
+
+div.me {
+  background-color: #9E9E9E;
+  width: 1000px;
+  height: 400px;
+  margin-left: 325px;
+  font-family: arial;
+  color: inherit;
+  font-weight:
+  font-size:
+}
+
+div.bio {
+  float:right;
+  width: 500px;
+  height: 200px;
+  padding-top: 90px;
+  padding-left: 30px;
+  display: block;
+}
+
+div.pic {
+  width: 500px;
+  padding-left: 50px;
+  padding-top: 70px;
+}
+
+div.portfolio {
+  background-color: #8B2500;
+  width: 1000px;
+  height: 400px;
+  margin-left: 325px;
+}
+
+div.contact {
+  background-color: #3A6073;
+  width: 1000px;
+  height: 400px;
+  margin-left: 325px;
+}
+
+/*div.theForm {
+  width: 46%;
+  height: inherit;
+  background-color: inherit;;
+  padding: 2%;
+  position: absolute;
+  top: auto;
+  right: 50%;
+  text-align: left;
+  margin-left: 25px;
+
+}
+
+div.theFormMessage {
+  width: 46%;
+  height: inherit;
+  background-color: inherit;
+  padding: 2%;
+  position: absolute;
+  top: auto;
+  left: 50%;
+  text-align: center;
+  font-family: arial;
+  line-height: 35px;
+}*/
+
+div.moreinfo {
+  background-color: #B0C4DE;
+  width: inherit;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 0;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HEADERS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<              */
+
+h1 {
+  text-align: center;
+  line-height: 50px;
+  font-family: "Century Gothic"
+}
+
+h3 {
+  text-align: center;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>INPUTS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+input.contactInfo {
+  height: 50px;
+  width: 300px;
+  background-color: inherit;
+  border: none;
+  font-weight:bold;
+  font-size: 20px
+}
+
+
+input.sendbtn {
+  height: 25px;
+  width: 100px;
+  border-style: none;
+  border-radius: 10px;
+}
+
+/*BUTTONS*/
+
+.btn {
+  width: 25px;
+  height: 15px;
+  background-color: inherit;
+}
+.btn:hover{
+  color: #FFFFFF;
+}
