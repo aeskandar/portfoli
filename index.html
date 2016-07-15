@@ -4,25 +4,31 @@
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" href="index.css" charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+
 </head>
 
 <body>
 
 
   <div class="header">
-    <a style="text-align:center">Abdulkarim</a>
-    <a class="btn">ABOUT</a>
-    <a class="btn">PORTFOLIO</a>
-    <a class="btn">CONTACT</a>
+    <div class="abdulkarim">
+      <h3>Abdulkarim</h3>
+    </div>
+    <div class="buttons">
+      <a href="#me" class="btn">ABOUT</a>
+      <a href="#portfolio" class="btn">PORTFOLIO</a>
+      <a href="#contact" class="btn">CONTACT</a>
+    </div>
   </div>
 
-  <div class="me">
+  <div class="me" id="me">
     <div class="bio">
       <p>
         The Name is Abdulkarim I'm a web-developer, with pre-major practical experience in web-design and web-programming; devoted to functional programming especially Javascript especially with Polymer Framework and information Architecture.
       </p>
 
-      <hr>
+      <hr class="line">
 
       <h3>Web Developer/Designer</h3>
     </div>
@@ -32,60 +38,58 @@
     </div>
 
 
+  </div>
+
+  <div class="portfolio" id="portfolio">
+    <h1>PORTFOLIO</h1>
 
   </div>
 
-  <div class="portfolio">
+  <div class="contact" id="contact">
+    <h1 style="text-align : center">CONTACT ME</h1>
+    <hr style="width : 50%" class="">
 
-  </div>
+    <div class="theForm">
+      <form id="contactForm">
+        <input class="contactInfo" type="text" name="name" placeholder="Name"> <br><br>
 
-  <div class="contact">
-    <!--<h1>CONTACT ME</h1>
-      <hr>
+        <input class="contactInfo" type="email" name="emailadress" placeholder="Email Address"><br><br>
 
-      <div class="theForm">
-        <form id="contactForm">
-            <input class="contactInfo" type="text" name="name" placeholder="Name"> <br><br>
+        <input class="contactInfo" type="tel" name="phonenumber" placeholder="Phone Number"><br><br>
 
-            <input class="contactInfo" type="email" name="emailadress" placeholder="Email Address"><br><br>
+        <input class="contactInfo" type="text-area" name="message" placeholder="Message"><br><br>
 
-            <input class="contactInfo" type="tel" name="phonenumber" placeholder="Phone Number"><br><br>
+        <input class="sendbtn" type="submit" name="submit">
 
-            <input class="contactInfo" type="text-area" name="message" placeholder="Message"><br><br>
+      </form>
+    </div>
 
-            <input class="sendbtn" type="submit" name="submit" placeholder="Send">
-        </form>
-      </div>
+    <div class="theFormMessage">
+      <p>
+        Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning
+        Ilmenau... just feel free to drop me a line anytime. I promise to reply A.S.A.P.
+      </p>
+    </div>
 
-      <div class="theFormMessage">
-          <p>
-            Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume,
-            tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Ilmenau...
-            just feel free to drop me a line anytime.
-            I promise to reply A.S.A.P.
-          </p>
-      </div>
-    -->
   </div>
 
   <div class="moreinfo">
-    <!--<div class="">
-        <h1>AROUND THE WEB</h1>
-        <a href="#"><i class="linkedin icon"></i></a>
-        <a href="#"><i class="facebook f icon"></i></a>
-        <a href="#"><i class="github icon"></i></a>
-      </div>
-      <div class="">
-        <h1>ABOUT THIS PAGE</h1>
-        <p>
-          Made With  <i class="css3 icon"></i> and <i class="html5 icon"></i> by Abdulkarim Eskandar.
-        </p>
-      </div> -->
-  </div>
+    <div class="moreinfo_left">
+     <h1>ABOUT THIS PAGE</h1>
+      <p>
+        Made With <i class="fa fa-css3 fa-2x" aria-hidden="true"></i> and <i class="fa fa-html5 fa-2x" aria-hidden="true"></i> by Abdulkarim Eskandar.
+      </p>
 
-  <footer color=white>
-    <h1>HM-Informatik © 2016. All Rights Reversed</h1>
-  </footer>
+
+    </div>
+    <div class="moreinfo_right">
+      <h1>AROUND THE WEB</h1>
+      <a target="_blank" href="https://github.com/iskandar992/portfoli"><i class="fa fa-github fa-3x"></i></a>
+      <a target="_blank"href="https://www.facebook.com/profile.php?id=100010264837742"><i class="fa fa-facebook fa-3x"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/abdulkarim-eskandar-ba3a4911a?authType=name&authToken=qUpV"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+
+    </div>
+  </div>
 </body>
 
 </html>

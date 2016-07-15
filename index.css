@@ -3,13 +3,34 @@ body {
   padding: 0;
   line-height: 1.9em;
   font-weight: bold;
-  font-size: 25px;
-  background-color: #001f3f;
+  font-size: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #474747;
   color: white;
 }
 
-hr {
-  width: 50%;
+a {
+  color: inherit;
+  padding: 25px;
+}
+
+hr.line {
+  border-top: 1px solid #8c8b8b;
+  text-align: center;
+}
+
+hr.line:after {
+  content: '§';
+  display: inline-block;
+  position: relative;
+  top: -14px;
+  padding: 0 10px;
+  background: #f0f0f0;
+  color: #8c8b8b;
+  font-size: 18px;
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  transform: rotate(90deg);
 }
 
 img {
@@ -17,120 +38,139 @@ img {
   border-radius: 350px;
 }
 
-
 footer {
   background-color: #FFE4B5;
   height: 100px;
 }
 
+
 /*                            DIV and box model           */
 
 div.header {
-  background-color: #5CACEE;
+  background-color: #800000;
   width: 100%;
   height: 100px;
-  line-height: 100px;
-  text-align: right;
+  div.abdulkarim {
+    height: inherit;
+    display: block;
+    padding-left: 350px;
+    padding-top: 9px;
+  }
+  div.buttons {
+    height: inherit;
+    display: inline-block;
+    margin-top: -300px;
+    margin-left: 1050px;
+    position: relative;
+    top: -75px;
+    right: 0px;
+    .btn {
+      padding: 25px;
+      text-decoration: none;
+    }
+    .btn:hover {
+      color: black;
+      cursor: pointer;
+      background-color: #8B0000;
+    }
+  }
 }
 
 div.me {
   background-color: #9E9E9E;
   width: 1000px;
-  height: 400px;
-  margin-left: 325px;
+  height: 450px;
+  margin-left: 300px;
   font-family: arial;
   color: inherit;
-  font-weight:
-  font-size:
-}
-
-div.bio {
-  float:right;
-  width: 500px;
-  height: 200px;
-  padding-top: 90px;
-  padding-left: 30px;
-  display: block;
-}
-
-div.pic {
-  width: 500px;
-  padding-left: 50px;
-  padding-top: 70px;
+  div.bio {
+    float: right;
+    width: 600px;
+    height: 200px;
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 30px;
+    display: block;
+    text-align: center;
+  }
+  div.pic {
+    width: 320px;
+    padding-left: 50px;
+    padding-top: 100px;
+  }
 }
 
 div.portfolio {
-  background-color: #8B2500;
+  background-color: #8F8F8F;
   width: 1000px;
-  height: 400px;
-  margin-left: 325px;
+  height: 500px;
+  margin-left: 300px;
+  padding-top: 5px;
+  text-align: center;
+
 }
 
 div.contact {
-  background-color: #3A6073;
+  background-color: #707070;
   width: 1000px;
-  height: 400px;
-  margin-left: 325px;
+  height: 500px;
+  margin-left: 300px;
+  padding-top: 3px;
+  padding-bottom: 10px;
+
+  div.theForm {
+    width: 500px;
+    padding-left: 30px;
+    position: absolute;
+  }
+  div.theFormMessage {
+    width: 500px;
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 500px;
+  }
 }
-
-/*div.theForm {
-  width: 46%;
-  height: inherit;
-  background-color: inherit;;
-  padding: 2%;
-  position: absolute;
-  top: auto;
-  right: 50%;
-  text-align: left;
-  margin-left: 25px;
-
-}
-
-div.theFormMessage {
-  width: 46%;
-  height: inherit;
-  background-color: inherit;
-  padding: 2%;
-  position: absolute;
-  top: auto;
-  left: 50%;
-  text-align: center;
-  font-family: arial;
-  line-height: 35px;
-}*/
 
 div.moreinfo {
-  background-color: #B0C4DE;
-  width: inherit;
-  width: 100%;
-  height: 250px;
-  margin-bottom: 0;
+  background-color: #800000;
+  height: 200px;
+  div.moreinfo_left{
+    display: inline-block;
+    position: relative;
+    left: 200px;
+    text-align: center;
+
+  }
+
+  div.moreinfo_right {
+    display: inline-block;
+    position: relative;
+    left: 700px;
+    text-align: center;
+  }
 }
 
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HEADERS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<              */
 
 h1 {
-  text-align: center;
-  line-height: 50px;
   font-family: "Century Gothic"
-}
-
-h3 {
-  text-align: center;
 }
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>INPUTS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
 input.contactInfo {
   height: 50px;
   width: 300px;
   background-color: inherit;
+  font-family: sans-serif;
+  color: inherit;
   border: none;
-  font-weight:bold;
-  font-size: 20px
+  font-weight: bold;
+  font-size: 20px;
 }
-
 
 input.sendbtn {
   height: 25px;
@@ -139,13 +179,5 @@ input.sendbtn {
   border-radius: 10px;
 }
 
-/*BUTTONS*/
 
-.btn {
-  width: 25px;
-  height: 15px;
-  background-color: inherit;
-}
-.btn:hover{
-  color: #FFFFFF;
-}
+/*BUTTONS*/
